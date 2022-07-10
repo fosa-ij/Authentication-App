@@ -1,0 +1,189 @@
+:root {
+    --body-bg: #2E3532;
+    --body-margin: 150px 0 0 0;
+    --main-width: 400px;
+    --main-heigth: 300px;
+    --main-bg-color: #BDC0AF;
+    --section-padding: 30px;
+    --section-margin: ;
+    --border-radius: 6px;
+    --input-padding: 12px 100px 12px 10px;
+    --input-margin: 8px 0;
+    --input-background: rgb(239, 236, 236);
+    --btn-width: 100%;
+    --btn-padding: 8px;
+    --btn-margin: 8px 0;
+    --btn-bg-color: blueviolet;
+    --btn-border: 0;
+    --btn-fs: 15px;
+    --btn-fw: 800;
+    --su-footer-margin: 0px 0 20px 0;
+    --footer-color: #9c0c22;
+    --error-color: red;
+}
+
+/* **************************************************
+REGISTER PAGE CSS
+************************************************** */
+.index-body {
+    background-color: var(--body-bg);
+    margin: var(--body-margin);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+.hp-main {
+    background-color: var(--btn-bg-color);
+    width: var(--main-width);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: var(--main-heigth);
+    border-radius: calc(var(--border-radius) + 10px);
+}
+
+
+.hp-second-sec {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    text-align: center;
+}
+
+
+.hp-first-sec h1 {
+    font-size: calc( var(--btn-fs) + 30px );
+}
+
+
+.hp-second-sec h4 {
+    font-size: calc( var(--btn-fs) + 10px );
+}
+.hp-second-sec h4 a {
+    color: inherit;
+}
+.hp-second-sec h4 a:hover {
+    color: var(--footer-color);
+}
+
+
+.error {
+    background-color: var(--error-color);
+}
+
+.display {
+    background-color: var(--error-color);
+}
+
+/* **************************************************
+SIGN-UP PAGE CSS
+************************************************** */
+.su-body {
+    background-color: var(--body-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: var(--body-margin);
+}
+
+
+.su-main {
+    background-color: var(--main-bg-color);
+    width: var(--main-width);
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    border-radius: calc( var(--border-radius) + 2px);
+}
+
+
+.input-placeholder {
+    padding: var(--input-padding);
+    margin: var(--input-margin);
+    border: 0;
+    /* border: 1px solid var(--btn-bg-color); */
+    border-radius: var(--border-radius);
+    background-color: var(--input-background);
+}
+input::placeholder {
+    color: var(--btn-bg-color);
+    font-weight: calc( 600 );
+}
+
+
+.su-button {
+    width: var(--btn-width);
+    padding: var(--btn-padding);
+    margin: var(--btn-margin);
+    background-color: var(--btn-bg-color);
+    color: aliceblue;
+    border: var(--btn-border);
+    border-radius: var(--border-radius);
+    font-size: var(--btn-fs);
+    font-weight: var(--btn-fw);
+}
+
+
+.su-footer {
+    text-align: center;
+}
+
+
+.su-footer h3 {
+    margin: var(--su-footer-margin);
+}
+.su-footer h3 a {
+    color: var(--footer-color);
+}
+
+
+
+/* **************************************************
+SIGN-IN PAGE CSS
+************************************************** */
+.si-body {
+    background-color: var(--body-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: var(--body-margin);
+}
+
+
+.si-main {
+    background-color: var(--main-bg-color);
+    width: var(--main-width);
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    border-radius: calc( var(--border-radius) + 2px);
+}
+
+
+
+.si-button {
+    width: var(--btn-width);
+    padding: var(--btn-padding);
+    margin: var(--btn-margin);
+    background-color: var(--btn-bg-color);
+    color: aliceblue;
+    border: var(--btn-border);
+    border-radius: var(--border-radius);
+    font-size: var(--btn-fs);
+    font-weight: var(--btn-fw);
+}
+
+
+.si-footer {
+    text-align: center;
+}
+
+
+.si-footer h3 {
+    margin: var(--su-footer-margin);
+    color: var(--footer-color);
+}
