@@ -1,5 +1,7 @@
 const Mongoose = require('mongoose')
-const RemoteDB = 'mongodb+srv://fosaij-Auth-App:RlQA0DJAqLUCxkC8@cluster0.kn2cqta.mongodb.net/?retryWrites=true&w=majority'
+require('dotenv').config()
+
+const RemoteDB = process.env.DB_STRING
 const connectDB = async () => {
     Mongoose.connect(RemoteDB)
         .then(client => {
